@@ -1,7 +1,5 @@
 class Solution(object):
     def singleNumber(self, nums):
-        if len(nums)==1:
-            return nums[0]
         dic={}
         for i in nums:
             if i not in dic:
