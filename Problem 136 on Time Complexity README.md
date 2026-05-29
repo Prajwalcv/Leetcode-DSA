@@ -21,5 +21,10 @@ To keep a linear runtime complexity, I have used Dictionary as the data structur
 When we place it inside a loop, the runtime becomes O(N) as i am counting the occurences of every number in the list to store it in dictionary.
 
 Time Complexity: O(N)
+Space Complexity (Current Approach): O(N) - Dictionary stores up to N/2 unique elements
+Space Complexity (Suggested/Optimal Approach): O(1) - Using Bit Manipulation with XOR operator
+
 Approach: Hash Table / Brute Force Search
-Alternative Approach: Bit Manipulation using XOR
+Alternative Approach: Bit Manipulation using XOR (Optimal - satisfies O(1) space constraint)
+
+Note: The problem constraint requires constant extra space O(1). The optimal solution uses XOR bit manipulation where a^a=0 and a^0=a, causing all paired numbers to cancel out and leaving only the single number.
